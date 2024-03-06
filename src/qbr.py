@@ -49,16 +49,16 @@ class Qbr:
             self.print_E_and_exit(E_INCORRECTLY_SCANNED)
 
         # guizero setup
-        app = App(text = "QBR: Start", height = 400, width = 400)
+        app = App(title = "QBR: Start", height = 400, width = 400)
         app.show()
 
-        window_sol = Window(app, text = "QBR: Instructions", height = 400, width = 400)
+        window_sol = Window(app, title = "QBR: Instructions", height = 400, width = 400)
         window_sol.hide()
 
-        window_hrs = Window(window_sol, text = "QBR: Human Readable Solution", height = 800, width = 800)
+        window_hrs = Window(window_sol, title = "QBR: Human Readable Solution", height = 800, width = 800)
         window_hrs.hide()
 
-        window_cs = Window(window_hrs, text = "QBR: Cheat Sheet")
+        window_cs = Window(window_hrs, title = "QBR: Cheat Sheet")
         window_cs.hide()
 
         # functions for guizero
@@ -103,8 +103,8 @@ class Qbr:
 
         # Text in windows
         starting_pos = Text(app, text = i18n.t('startingPosition'))
-        moves = Text(window, text = i18n.t('moves', moves=length))
-        solution = Text(window, text = i18n.t('solution', algorithm=algorithm))
+        moves = Text(window_sol, text = i18n.t('moves', moves=length))
+        solution = Text(window_sol, text = i18n.t('solution', algorithm=algorithm))
 
         if self.normalize:
             for index, notation in enumerate(algorithm.split(' ')):
