@@ -17,6 +17,7 @@ LOCALES = {
     'fr': 'French',
     'en': 'English',
     'nl': 'Nederlands',
+    'pl': 'Polish',
     'es': 'Spanish',
     'zh': '简体中文',
     'zh-tw': '台灣繁體中文'
