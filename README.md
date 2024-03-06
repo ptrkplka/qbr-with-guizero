@@ -11,7 +11,7 @@ Python 3 and OpenCV.
 
 - :rainbow: Accurate color detection
 - :mag: Accurate 3x3x3 rubik's cube detection
-- :capital_abcd: Multilingual
+- :capital_abcd: Multilingual (Right now 3 languages, only ones I need.)
 
 ### Solve mode
 
@@ -26,11 +26,25 @@ be detected properly.
 
 Simply follow the on-screen instructions and you're ready to go.
 
+If you're encountering the following problem: `'FreeTypeFont' object has no attribute to 'getsize'`
+I fixed it by changing the pillow version to 9.5.0. You can simply do that by either doing
+```
+$ pip uninstall pillow
+$ pip install pillow==9.5.0
+```
+
+or
+
+```
+$ pip install --force-reinstall pillow==9.5.0
+```
+
 ![calibrate mode](./demo-calibrate-mode.jpg)
 ![calibrate mode success](./demo-calibrate-mode-success.jpg)
 
 # Table of Contents
 
+- [Disclaimer](#disclaimer)
 - [Qbr](#qbr)
     + [Solve mode](#solve-mode)
     + [Calibrate mode](#calibrate-mode)
@@ -123,14 +137,11 @@ Default language is set to English.
 
 Available languages are:
 
+There were many other languages here, I'm deleting them since I'm not going to be using them.
+
 - English
-- Hungarian
-- Deutsch
-- French
-- Spanish
 - Dutch
-- 简体中文
-- 台灣繁體中文
+- Polish (WIP)
 
 ### Calibrate mode
 
