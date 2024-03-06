@@ -63,11 +63,44 @@ class Qbr:
 
         # functions for guizero
 
-        
+        # open
+        def open_window_sol():
+            window_sol.show()
+            app.hide()
 
+        def open_window_hrs():
+            window_hrs.show()
+            window_sol.hide()
+
+        def open_window_cs():
+            window_cs.show()
+
+        # close
+
+        def close_app():
+            os.exit()
+
+        def close_window_sol():
+            app.show()
+            window_sol.hide()
+
+        def close_window_hrs():
+            window_sol.show()
+            window_hrs.hide()
+
+        def close_window_cs():
+            window_cs.hide()
+
+        # Buttons
         button_next = PushButton(app, text = "-->", command = open_window_sol)
         button_close = PushButton(app, text = i18n.t('close'), command = close_app)
 
+        button_next_sol = PushButton(window_sol, text = i18n.t('hrs'), command = open_window_hrs)
+        button_close_sol = Pushbutton(window_sol, text = i18n.t('close'), command = close_window_sol)
+        
+        
+
+        # Text in windows
         starting_pos = Text(app, text = i18n.t('startingPosition'))
         moves = Text(window, text = i18n.t('moves', moves=length))
         solution = Text(window, text = i18n.t('solution', algorithm=algorithm))
