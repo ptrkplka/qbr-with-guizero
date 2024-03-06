@@ -96,9 +96,10 @@ class Qbr:
         button_close = PushButton(app, text = i18n.t('close'), command = close_app)
 
         button_next_sol = PushButton(window_sol, text = i18n.t('hrs'), command = open_window_hrs)
-        button_close_sol = Pushbutton(window_sol, text = i18n.t('close'), command = close_window_sol)
+        button_close_sol = PushButton(window_sol, text = i18n.t('close'), command = close_window_sol)
         
-        
+        button_next_hrs = PushButton(window_hrs, text = i18n.t('cs'), command = open_window_cs)
+        button_close_hrs = PushButton(window_hrs, text = i18n.t('close'), command = close_window_hrs)
 
         # Text in windows
         starting_pos = Text(app, text = i18n.t('startingPosition'))
@@ -108,7 +109,7 @@ class Qbr:
         if self.normalize:
             for index, notation in enumerate(algorithm.split(' ')):
                 text = i18n.t('solveManual.{}'.format(notation))
-                human_readable_solution = Text(window_HRS, text = '{}. {}'.format(index + 1, text))
+                human_readable_solution = Text(window_hrs, text = '{}. {}'.format(index + 1, text))
 
     def print_E_and_exit(self, code):
         """Print an error message based on the code and exit the program."""
