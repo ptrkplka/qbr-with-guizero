@@ -1,3 +1,9 @@
+# Disclaimer
+
+I'm using this repo as a failback if something acts up with my SD-card.
+Adding to this, I do not own every single file from this repo. All the credit goes to the brilliant owner of it (Kkoomen). 
+Their work helped me go further in my research and appproaching the finish line of my last year project before going to university. 
+
 # Qbr
 
 Qbr, pronounced as Cuber, is a webcam-based 3x3x3 rubik's cube solver written in
@@ -186,7 +192,7 @@ If you've done the steps above correctly, you should have a solution from Qbr.
 
 # Parameters
 
-You can use `-n` or `--normalize` to also output the solution in a "human-readable" format.
+You can use `-n` or `--normalize` (`--n` works too) to also output the solution in a "human-readable" format.
 
 For example:
 
