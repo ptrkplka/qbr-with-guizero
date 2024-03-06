@@ -51,7 +51,7 @@ class Qbr:
         # guizero setup
         app = App(title = "QBR: Start", height = 400, width = 400)
 
-        window_sol = Window(app, title = "QBR: Instructions", height = 400, width = 400)
+        window_sol = Window(app, title = "QBR: Instructions", height = 400, width = 700)
         window_sol.hide()
 
         window_hrs = Window(window_sol, title = "QBR: Human Readable Solution", height = 800, width = 800)
@@ -77,7 +77,7 @@ class Qbr:
         # close
 
         def close_app():
-            os.exit()
+            sys.exit()
 
         def close_window_sol():
             app.show()
@@ -91,8 +91,8 @@ class Qbr:
             window_cs.hide()
 
         # Buttons
-        button_next = PushButton(app, text = "-->", command = open_window_sol)
-        button_close = PushButton(app, text = i18n.t('close'), command = close_app)
+        button_next = PushButton(app, text = "-->", command = open_window_sol, align = right)
+        button_close = PushButton(app, text = i18n.t('close'), command = close_app, align = bottom)
 
         button_next_sol = PushButton(window_sol, text = i18n.t('hrs'), command = open_window_hrs)
         button_close_sol = PushButton(window_sol, text = i18n.t('close'), command = close_window_sol)
