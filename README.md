@@ -1,8 +1,8 @@
 # Disclaimer
 
-I'm using this repo as a failback if something acts up with my SD-card.
-Adding to this, I do not own every single file from this repo. All the credit goes to the brilliant owner of it (Kkoomen). 
-Their work helped me go further in my research and appproaching the finish line of my last year project before going to university. 
+I'm using this repo as a fallback if something acts up with my SD-card of my Raspberry Pi 4b. (again)
+Adding to this, I do not own most of the files from this repo. All the credit goes to the brilliant owner of it (Kkoomen). 
+Their work helped me go further in my research and approaching the finish line of my last year project before going to university. 
 
 # Qbr
 
@@ -11,7 +11,7 @@ Python 3 and OpenCV.
 
 - :rainbow: Accurate color detection
 - :mag: Accurate 3x3x3 rubik's cube detection
-- :capital_abcd: Multilingual (Right now 3 languages, only ones I need.)
+- :capital_abcd: Multilingual
 
 ### Solve mode
 
@@ -86,8 +86,8 @@ $ sudo apt-get install python3-dev build-essential
 Then, continue to install the project:
 
 ```
-$ git clone --depth 1 https://github.com/kkoomen/qbr.git
-$ cd qbr
+$ git clone --depth 1 https://github.com/ptrkplka/qbr-with-guizero.git
+$ cd qbr-with-guizero
 $ python3 -m venv env
 $ source ./env/bin/activate
 $ pip3 install -r requirements.txt
@@ -137,11 +137,16 @@ Default language is set to English.
 
 Available languages are:
 
-There were many other languages here, I'm deleting them since I'm not going to be using them.
-
 - English
+- Hungarian
+- Deutsch
+- French
+- Spanish
 - Dutch
-- Polish (WIP)
+- Polish (I made this and I can be proud of it. *wink wink*)
+- 简体中文
+- 台灣繁體中文
+
 
 ### Calibrate mode
 
@@ -207,7 +212,7 @@ You can use `-n` or `--normalize` (`--n` works too) to also output the solution 
 
 For example:
 
-* `R` will be: `Turn the right side a quarter turn away from you.`
+* `R` will be: `Turn the right side 90 degrees away from you.`
 * `F2` will be: `Turn the front face 180 degrees.`
 
 # Example runs
