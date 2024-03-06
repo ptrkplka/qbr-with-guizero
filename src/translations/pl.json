@@ -1,0 +1,49 @@
+{
+    "pl": {
+        "scannedSides": "Zeskanowane scianki: %{num}/6",
+        "calibratedSuccessfully": "Kalibracja zakonczona",
+        "quitCalibrateMode": "Nacisnij %{keyValue} zeby wyjsc z kalibracji",
+        "currentCalibratingSide": {
+            "red": "Skalibruj czerwona scianke",
+            "orange": "Skalibruj pomaranczowa scianke",
+            "white": "Skalibruj biala scianke",
+            "yellow": "Skalibruj zolta scianke",
+            "blue": "Skalibruj niebieska scianke",
+            "green": "Skalibruj zielona scianke"
+        },
+        "red": "czerwony",
+        "orange": "pomaranczowy",
+        "white": "bialy",
+        "yellow": "zolty",
+        "blue": "niebieski",
+        "green": "zielony",
+        "pleaseTryAgain": "Sprobuj ponownie",
+        "error": "QBR ERROR",
+        "haventScannedAllSides": "Ups, wszystkie scianki nie zostaly dobrze zeskanowane.",
+        "cubeAlreadySolved": "Twoja kostka juz jest ulozona.",
+        "moves": "Ruchy: %{moves}",
+        "solution": "Rozwiazanie: %{algorithm}",
+        "startingPosition": "Pozycja startowa: \nPrzod Srodek: zielony\nGora Srodek: bialy\n**UWAGA!!**\nJezeli nie zaczniesz z powyzej pokazana pozycja, nie uda ci sie zrobic kostki.\n Jak sie tego nie bedziesz trzymal(a), bedziesz musial(a) jeszcze raz zeskanowac kostke.",
+        "language": "Jezyk",
+        "solveManual": {
+            "R": "Przekrec prawa strone raz od siebie.",
+            "R'": "Przekrec prawa strone raz do siebie.",
+            "R2": "Przekrec prawa strone dwa razy.",
+            "L": "Przekrec lewa strone raz do siebie.",
+            "L'": "Przekrec lewa strone raz od siebie.",
+            "L2": "Przekrec lewa strone dwa razy.",
+            "U": "Turn the top layer a quarter turn to the left.",
+            "U'": "Turn the top layer a quarter turn to the right.",
+            "U2": "Turn the top layer 180 degrees.",
+            "D": "Turn the bottom layer a quarter turn to the right.",
+            "D'": "Turn the bottom layer a quarter turn to the left.",
+            "D2": "Turn the bottom layer 180 degrees.",
+            "B": "Turn the back side a quarter turn to the left.",
+            "B'": "Turn the back side a quarter turn to the right.",
+            "B2": "Turn the back side 180 degrees.",
+            "F": "Turn the front side a quarter turn to the right.",
+            "F'": "Turn the front side a quarter turn to the left.",
+            "F2": "Turn the front side 180 degrees."
+        }
+    }
+}
