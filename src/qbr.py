@@ -14,6 +14,7 @@ from constants import (
     E_INCORRECTLY_SCANNED,
     E_ALREADY_SOLVED
 )
+from guizero import App, Window, Text, PushButton
 
 # Set default locale.
 locale = config.get_setting('locale')
@@ -46,6 +47,19 @@ class Qbr:
             length = len(algorithm.split(' '))
         except Exception:
             self.print_E_and_exit(E_INCORRECTLY_SCANNED)
+
+        # guizero setup
+        app = App(text = "QBR: Start", height = 400, width = 400)
+        app.show()
+
+        window = Window(app, text = "QBR: Instructions", height = 400, width = 400)
+        window.hide()
+
+        window_HRS = Window(window, text = "QBR: Human Readable Solution", height = 800, width = 800)
+        window_HRS.hide()
+
+        window_CS = Window(window_HRS, text = "QBR: Cheat Sheet")
+        window_CS.hide()
 
         print(i18n.t('startingPosition'))
         print(i18n.t('moves', moves=length))
