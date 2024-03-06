@@ -50,7 +50,6 @@ class Qbr:
 
         # guizero setup
         app = App(title = "QBR: Start", height = 400, width = 400)
-        app.show()
 
         window_sol = Window(app, title = "QBR: Instructions", height = 400, width = 400)
         window_sol.hide()
@@ -111,6 +110,10 @@ class Qbr:
                 text = i18n.t('solveManual.{}'.format(notation))
                 human_readable_solution = Text(window_hrs, text = '{}. {}'.format(index + 1, text))
 
+
+        app.display()
+
+        # end
     def print_E_and_exit(self, code):
         """Print an error message based on the code and exit the program."""
         if code == E_INCORRECTLY_SCANNED:
