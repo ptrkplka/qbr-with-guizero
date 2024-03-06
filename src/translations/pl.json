@@ -44,6 +44,8 @@
             "F": "Przekrec przednia strone raz w prawo.",
             "F": "Przekrec przednia strone raz w lewo.",
             "F2": "Przekrec przednia strone dwa razy."
-        }
+        },
+        "close" : "Zamknij",
+        "hrs" : "Czytelne dla czlowieka"
     }
 }

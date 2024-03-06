@@ -44,6 +44,8 @@
             "F": "Turn the front side once to the right.",
             "F'": "Turn the front side once to the left.",
             "F2": "Turn the front side twice."
-        }
+        },
+        "close" : "Close",
+        "hrs" : "Human Readable"
     }
 }

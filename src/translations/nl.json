@@ -44,6 +44,8 @@
             "F": "Draai de voorzijde 90 graden naar rechts.",
             "F'": "Draai de voorzijde 90 graden naar links.",
             "F2": "Draai de voorzijde 180 graden ."
-        }
+        },
+        "close" : "Sluiten",
+        "hrs": "Leesbaar voor de mens"
     }
 }
