@@ -23,7 +23,7 @@
         "cubeAlreadySolved": "Twoja kostka juz jest ulozona.",
         "moves": "Ruchy: %{moves}",
         "solution": "Rozwiazanie: %{algorithm}",
-        "startingPosition": "Pozycja startowa: \nPrzod Srodek: zielony\nGora Srodek: bialy\n**UWAGA!!**\nJezeli nie zaczniesz z powyzej pokazana pozycja, nie uda ci sie zrobic kostki.\n Jak sie tego nie bedziesz trzymal(a), bedziesz musial(a) jeszcze raz zeskanowac kostke.",
+        "startingPosition": "Pozycja startowa: \nPrzod Srodek: zielony\nGora Srodek: bialy\n**UWAGA!!**\nJezeli nie zaczniesz z powyzej pokazana pozycja, nie uda ci sie zrobic kostki.\nJak sie tego nie bedziesz trzymal(a), bedziesz musial(a) jeszcze raz zeskanowac kostke.",
         "language": "Jezyk",
         "solveManual": {
             "R": "Przekrec prawa strone raz od siebie.",

@@ -52,23 +52,30 @@ class Qbr:
         app = App(text = "QBR: Start", height = 400, width = 400)
         app.show()
 
-        window = Window(app, text = "QBR: Instructions", height = 400, width = 400)
-        window.hide()
+        window_sol = Window(app, text = "QBR: Instructions", height = 400, width = 400)
+        window_sol.hide()
 
-        window_HRS = Window(window, text = "QBR: Human Readable Solution", height = 800, width = 800)
-        window_HRS.hide()
+        window_hrs = Window(window_sol, text = "QBR: Human Readable Solution", height = 800, width = 800)
+        window_hrs.hide()
 
-        window_CS = Window(window_HRS, text = "QBR: Cheat Sheet")
-        window_CS.hide()
+        window_cs = Window(window_hrs, text = "QBR: Cheat Sheet")
+        window_cs.hide()
 
-        print(i18n.t('startingPosition'))
-        print(i18n.t('moves', moves=length))
-        print(i18n.t('solution', algorithm=algorithm))
+        # functions for guizero
+
+        
+
+        button_next = PushButton(app, text = "-->", command = open_window_sol)
+        button_close = PushButton(app, text = i18n.t('close'), command = close_app)
+
+        starting_pos = Text(app, text = i18n.t('startingPosition'))
+        moves = Text(window, text = i18n.t('moves', moves=length))
+        solution = Text(window, text = i18n.t('solution', algorithm=algorithm))
 
         if self.normalize:
             for index, notation in enumerate(algorithm.split(' ')):
                 text = i18n.t('solveManual.{}'.format(notation))
-                print('{}. {}'.format(index + 1, text))
+                human_readable_solution = Text(window_HRS, text = '{}. {}'.format(index + 1, text))
 
     def print_E_and_exit(self, code):
         """Print an error message based on the code and exit the program."""
