@@ -46,6 +46,7 @@
             "F2": "Turn the front side twice."
         },
         "close" : "Close",
-        "hrs" : "Human Readable"
+        "hrs" : "Human Readable",
+        "cs" : "Cheat Sheet"
     }
 }
