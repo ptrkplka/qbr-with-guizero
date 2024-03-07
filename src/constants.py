@@ -19,6 +19,8 @@ LOCALES = {
     'nl': 'Nederlands',
     'pl': 'Polish',
     'es': 'Spanish',
+    'zh': '简体中文',
+    'zh-tw': '台灣繁體中文'
 }
 
 # Camera interface
