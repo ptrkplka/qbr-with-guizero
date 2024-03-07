@@ -94,11 +94,11 @@ class Qbr:
         button_next = PushButton(app, text = "-->", command = open_window_sol, align = "right")
         button_close = PushButton(app, text = i18n.t('close'), command = close_app, align = "bottom")
 
-        button_next_sol = PushButton(window_sol, text = i18n.t('hrs'), command = open_window_hrs)
-        button_close_sol = PushButton(window_sol, text = i18n.t('close'), command = close_window_sol)
+        button_next_sol = PushButton(window_sol, text = i18n.t('hrs'), command = open_window_hrs, align = "right")
+        button_close_sol = PushButton(window_sol, text = i18n.t('close'), command = close_window_sol, align = "left")
         
-        button_next_hrs = PushButton(window_hrs, text = i18n.t('cs'), command = open_window_cs)
-        button_close_hrs = PushButton(window_hrs, text = i18n.t('close'), command = close_window_hrs)
+        button_next_hrs = PushButton(window_hrs, text = i18n.t('cs'), command = open_window_cs, align = "bottom")
+        button_close_hrs = PushButton(window_hrs, text = i18n.t('close'), command = close_window_hrs, align = "bottom")
 
         # Text in windows
         starting_pos = Text(app, text = i18n.t('startingPosition'))
@@ -110,9 +110,7 @@ class Qbr:
                 text = i18n.t('solveManual.{}'.format(notation))
                 human_readable_solution = Text(window_hrs, text = '{}. {}'.format(index + 1, text))
 
-
         app.display()
-
         # end
     def print_E_and_exit(self, code):
         """Print an error message based on the code and exit the program."""
