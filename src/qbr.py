@@ -49,7 +49,7 @@ class Qbr:
             self.print_E_and_exit(E_INCORRECTLY_SCANNED)
 
         # guizero setup
-        app = App(title = "QBR: Start", height = 400, width = 400)
+        app = App(title = "QBR: Start", height = 400, width = 700)
 
         window_sol = Window(app, title = "QBR: Instructions", height = 400, width = 700)
         window_sol.hide()
@@ -91,8 +91,8 @@ class Qbr:
             window_cs.hide()
 
         # Buttons
-        button_next = PushButton(app, text = "-->", command = open_window_sol, align = right)
-        button_close = PushButton(app, text = i18n.t('close'), command = close_app, align = bottom)
+        button_next = PushButton(app, text = "-->", command = open_window_sol, align = "right")
+        button_close = PushButton(app, text = i18n.t('close'), command = close_app, align = "bottom")
 
         button_next_sol = PushButton(window_sol, text = i18n.t('hrs'), command = open_window_hrs)
         button_close_sol = PushButton(window_sol, text = i18n.t('close'), command = close_window_sol)
