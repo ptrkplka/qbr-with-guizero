@@ -57,7 +57,7 @@ class Qbr:
         window_hrs = Window(window_sol, title = "QBR: Human Readable Solution", height = 800, width = 800)
         window_hrs.hide()
 
-        window_cs = Window(window_hrs, title = "QBR: Cheat Sheet")
+        window_cs = Window(window_hrs, title = "QBR: Cheat Sheet", height = 1000, width = 1000)
         window_cs.hide()
 
         cheat_sheet = Picture(window_cs, image="cheat_sheet.jpg")
