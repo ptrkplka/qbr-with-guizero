@@ -14,7 +14,7 @@ from constants import (
     E_INCORRECTLY_SCANNED,
     E_ALREADY_SOLVED
 )
-from guizero import App, Window, Text, PushButton
+from guizero import App, Window, Text, PushButton, Picture
 
 # Set default locale.
 locale = config.get_setting('locale')
@@ -51,7 +51,7 @@ class Qbr:
         # guizero setup
         app = App(title = "QBR: Start", height = 400, width = 700)
 
-        window_sol = Window(app, title = "QBR: Instructions", height = 400, width = 700)
+        window_sol = Window(app, title = "QBR: Solution", height = 400, width = 750)
         window_sol.hide()
 
         window_hrs = Window(window_sol, title = "QBR: Human Readable Solution", height = 800, width = 800)
@@ -59,6 +59,8 @@ class Qbr:
 
         window_cs = Window(window_hrs, title = "QBR: Cheat Sheet")
         window_cs.hide()
+
+        cheat_sheet = Picture(window_cs, image="cheat_sheet.jpg")
 
         # functions for guizero
 
@@ -100,6 +102,7 @@ class Qbr:
         button_next_hrs = PushButton(window_hrs, text = i18n.t('cs'), command = open_window_cs, align = "bottom")
         button_close_hrs = PushButton(window_hrs, text = i18n.t('close'), command = close_window_hrs, align = "bottom")
 
+        button_close_cs = PushButton(window_cs, text = i18n.t('close'), command = close_window_cs, align = "bottom")
         # Text in windows
         starting_pos = Text(app, text = i18n.t('startingPosition'))
         moves = Text(window_sol, text = i18n.t('moves', moves=length))
