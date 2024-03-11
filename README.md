@@ -144,8 +144,11 @@ Available languages are:
 - Spanish
 - Dutch
 - Polish (I made this and I can be proud of it. *wink wink*)
-- 简体中文
-- 台灣繁體中文
+- ~~简体中文~~
+- ~~台灣繁體中文~~
+
+Had to remove support for both Chinese and Traditional Chinese due to errors. 
+I have no clue why it would show errors after adding Polish into the mix.
 
 
 ### Calibrate mode
