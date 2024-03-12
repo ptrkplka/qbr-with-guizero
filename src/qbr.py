@@ -14,7 +14,7 @@ from constants import (
     E_INCORRECTLY_SCANNED,
     E_ALREADY_SOLVED
 )
-from guizero import App, Window, Text, PushButton, Picture
+from guizero import App, Window, Text, PushButton, Picture, CheckBox
 
 # Set default locale.
 locale = config.get_setting('locale')
@@ -49,7 +49,7 @@ class Qbr:
             self.print_E_and_exit(E_INCORRECTLY_SCANNED)
 
         # guizero setup
-        app = App(title = "QBR: Start", height = 400, width = 700)
+        app = App(title = "QBR: Start", height = 300, width = 500)
 
         window_sol = Window(app, title = "QBR: Solution", height = 400, width = 750)
         window_sol.hide()
@@ -111,7 +111,7 @@ class Qbr:
         if self.normalize:
             for index, notation in enumerate(algorithm.split(' ')):
                 text = i18n.t('solveManual.{}'.format(notation))
-                human_readable_solution = Text(window_hrs, text = '{}. {}'.format(index + 1, text))
+                human_readable_solution = CheckBox(window_hrs, text = '{}. {}'.format(index + 1, text))
 
         app.display()
         # end
