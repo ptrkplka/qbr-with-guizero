@@ -13,12 +13,12 @@ COLOR_PLACEHOLDER = (150, 150, 150)
 # i18n
 LOCALES = {
     'de': 'Deutsch',
-    'hu': 'Hungarian',
-    'fr': 'French',
+    'hu': 'Magyar',
+    'fr': 'Français',
     'en': 'English',
     'nl': 'Nederlands',
-    'pl': 'Polish',
-    'es': 'Spanish',
+    'pl': 'Polski',
+    'es': 'Español',
 #    'zh': '简体中文',
 #    'zh-tw': '台灣繁體中文'
 }
