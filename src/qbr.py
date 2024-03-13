@@ -51,7 +51,7 @@ class Qbr:
         # guizero setup
         app = App(title = "QBR: Start", height = 300, width = 500)
 
-        window_sol = Window(app, title = "QBR: Solution", height = 400, width = 750)
+        window_sol = Window(app, title = "QBR: Solution", height = 300, width = 800)
         window_sol.hide()
 
         window_hrs = Window(window_sol, title = "QBR: Human Readable Solution", height = 800, width = 800)
