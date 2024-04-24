@@ -2,7 +2,7 @@
 
 I'm using this repo as a fallback if something acts up with my SD-card of my Raspberry Pi 4b. (again)
 Adding to this, I do not own most of the files from this repo. All the credit goes to the brilliant owner of it (Kkoomen). 
-Their work helped me go further in my research and approaching the finish line of my last year project before going to university. 
+Their work helped me go further in my research and approaching the finish line of my last year project before going to college. 
 
 # Qbr
 
