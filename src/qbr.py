@@ -48,7 +48,13 @@ class Qbr:
         except Exception:
             self.print_E_and_exit(E_INCORRECTLY_SCANNED)
 
-        # guizero setup
+        # guizero setup for windows
+		"""
+  		abbreviations:
+		sol = solution
+  		hrs = Human Readable Solution
+		cs = Cheat Sheet
+  		"""
         app = App(title = "QBR: Start", height = 300, width = 500)
 
         window_sol = Window(app, title = "QBR: Solution", height = 300, width = 800)
